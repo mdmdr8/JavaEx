@@ -2,8 +2,24 @@ package java.chapter06.Example;
 
 public class Car {
     String company = "현대자동차";
-    String model= "그랜저";
-    String color = "black";
-    int maxSpeed = 350;
-    int speed;
+    String model;
+    String color;
+    int maxSpeed;
+//    int speed;
+
+    //생성자 선언1
+    Car() {}
+
+    //생성자 선언2
+    Car(String model, String color){
+        this.model = model;
+        this.color = color;
+    }
+    //생성자 선언3
+    Car(String model, String color, int maxSpeed){
+        this.model = model;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+    }
+
 }
