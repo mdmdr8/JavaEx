@@ -12,8 +12,7 @@ public class Car {
 
     //생성자 선언2
     Car(String model, String color){
-        this.model = model;
-        this.color = color;
+        this(model, color, 250);
     }
     //생성자 선언3
     Car(String model, String color, int maxSpeed){
