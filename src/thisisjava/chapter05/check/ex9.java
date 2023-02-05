@@ -1,5 +1,4 @@
 package thisisjava.chapter05.check;
-
 import java.util.Scanner;
 
 public class ex9 {
