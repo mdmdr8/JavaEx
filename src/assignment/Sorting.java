@@ -1,15 +1,29 @@
 package assignment;
-//String[] sort(String[] data)
-//alphabetical order로 sorting하는 거
-
-import java.util.Arrays;
+//삽입정렬
+//alphabetical order로 sort하는 함수 로직 짜기
 
 public class Sorting {
-    public static void main(String[] args){
-        String[] name = {"Rahul", "Ajay", "Gourav", "Riya"};
-        Arrays.sort(name);
-        for(int i = 0; i < name.length; i++){
-            System.out.println(name[i]);
+    public static String[] sort(String[] data){
+        String temp = "";
+
+        for(int k = 1; k< data.length; k++){
+            String name = data[k];
+            int i = k-1;
+
+
+            while( i >= 0 && data[i].compareToIgnoreCase(data[i+1]) > 0){
+                temp = data[i];
+                data[i] = data[i+1];
+                data[i+1] = temp;
+                i--;
+            }
         }
+        for(int j = 0 ; j < data.length; j++){
+            System.out.println(data[j]);
+        }
+    return data;
     }
+
 }
+
+
