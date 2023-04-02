@@ -1,4 +1,4 @@
-package PhoneBook;
+package phoneBook;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -42,6 +42,7 @@ public class FileManager {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("파일이 존재하지 않습니다.");
         } finally {
             try {
                 if (br != null) {

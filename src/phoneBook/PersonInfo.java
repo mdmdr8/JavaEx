@@ -1,4 +1,4 @@
-package PhoneBook;
+package phoneBook;
 
 public class PersonInfo {
     private String name;
