@@ -10,7 +10,6 @@ public class 토큰사용법 {
         System.out.println();
 
         System.out.println("total tokens : " + stk.countTokens() );
-        String[] tokens = str.split(" ");
 
        while(stk.hasMoreElements()){
            System.out.println(stk.nextToken());
