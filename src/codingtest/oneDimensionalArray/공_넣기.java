@@ -9,7 +9,7 @@ public class 공_넣기 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer str = new StringTokenizer(br.readLine());
-
+        StringBuilder sb = new StringBuilder();
         //바구니
         int n = Integer.parseInt(str.nextToken());
         Integer[] basket = new Integer[n];
@@ -28,14 +28,15 @@ public class 공_넣기 {
             int b = Integer.parseInt(str1.nextToken());
             int k = Integer.parseInt(str1.nextToken());
 
-            for(int j=0; j<b-a+1; j++){
-                basket[a+j-1] = k;
+            for(int j=a-1; j<b; j++){
+                basket[j] = k;
             }
 
         }
-        for(int i =0; i<n; i++){
-            System.out.print(basket[i] + " ");
+        for(int num : basket){
+            sb.append(num + " ");
         }
-
+        System.out.println(sb);
+        br.close();
     }
 }
